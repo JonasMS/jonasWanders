@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jonas Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css\bootstrap.css" rel="stylesheet">
+    <link href="css\my-styles.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="js\jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.0.js"></script>
+
+  </head>
+
+  <body>
+
+	<!-- Jumbotron --> 
+	<div class="jumbotron">
+		<div class="container">
+			<div class="col-sm-12">
+				<h2 class="title page-title ">jonas travels</h2>
+				<h3 class="title page-sub-title "><i>(and thinks)</i></h3>
+			</div> <!-- end col-sm-12 -->
+		</div> <!-- end container -->
+	</div> <!-- end jumbotron -->
+
+	<div class="spacer">
+			<div class="icons">
+				<a class="icon" href="https://instagram.com/jomaxty_sota/" data-icon="&#xe604;"></a>
+				<a class="icon" href="https://www.flickr.com/photos/130947697@N08/" data-icon="&#xe601;"></a>
+				<a class="icon me" href="#">me</a>
+			</div>
+		</div>
+
+		<div class="spacer-border"></div>
+
+	<div class="container">
+	
+	<!-- about -->
+		<div class="row about">
+			<div class="col-sm-6 hidden-xs">
+				<div class="ft-icon profile img-rounded"></div>
+			</div> 
+			<div class="col-sm-6 about-text">
+				<h3 class="title">So, what am I doing?</h3>
+				<p class="text">I'm riding my motorcycle around North America. I want to get to know the people and places of my country. More specifically, I want to know what matters to North Americans and how we use web &amp; mobile</p>
+			</div> <!-- end col-sm-6 about-text -->
+		</div> <!-- end row about -->
+	<!-- blog posts -->
+		<div class = "row">
+			<div class="col-sm-12">
+			<h2 class="title content-title "> Tour of the USA, 2015 </h2>
+			</div>
+			
+		</div> <!-- end row -->
+		
+		<div class="row">
+			<div class="col-sm-12 btns-frame btns-background">
+				<div class="btn btn-left">
+					<a class="center-block" href="#" role="button">
+						<div class="btn-titles">
+							<p class="title blog-title text-center">Travel Tips</p>
+							<p class="blog-sub-title text-center">Things and places to keep in mind</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="btn-border"></div>
+				
+				<div class="btn btn-right">
+					<a class="center-block" href="#" role="button">
+						<div class="btn-titles">
+							<p class="title blog-title  text-center">Gear</p>
+							<p class="blog-sub-title text-center">Notes on the gear I used (and wish I had)</p>
+						</div>
+					</a>
+				</div>
+			</div><!-- end col-sm-12 -->
+		</div><!-- end row -->
+		
+
+	</div> <!--end container -->
+
+	<div class="photoAlbum">
+		<div class="container">
+			<div class="row">	
+				<div class="col-sm-12 photoPost">
+					<h2 class="content-title title"> Latest Photos </h2>
+						<img class="photo" src="E:\Dropbox\Max's Folder\Photos\USA Tour (2015)\IMG_3759-2.jpg" alt="image">
+				</div><!-- end col-sm-12 -->
+			</div><!--end row -->	
+		</div><!--end container -->		
+	</div><!-- end photoAlbum -->
+
+
+	<!-- cause PhotoAlbum background to darken when scrolled to -->
+	<script>
+
+		$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    var photoPos = $(".photoAlbum").offset().top;
+
+    if (scroll >= photoPos) {
+        $(".photoAlbum").addClass("darken");
+        $(".photoAlbum").removeClass("lighten");
+
+    } else {
+        $(".photoAlbum").removeClass("darken");
+        $(".photoAlbum").addClass("lighten");
+
+    }
+});
+	
+	</script>
+
+  </body>
+</html>

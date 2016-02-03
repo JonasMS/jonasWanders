@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?jc6jwk');
+	src:url('fonts/icomoon.eot?#iefixjc6jwk') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?jc6jwk') format('truetype'),
+		url('fonts/icomoon.woff?jc6jwk') format('woff'),
+		url('fonts/icomoon.svg?jc6jwk#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	letter-spacing: 0;
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e600";
+}
+.icon-instagram:before {
+	content: "\e604";
+}
+.icon-flickr2:before {
+	content: "\e601";
+}
+.icon-linkedin2:before {
+	content: "\e602";
+}
